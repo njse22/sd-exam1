@@ -10,8 +10,7 @@
 
   </head>
 
-  <h1 align=center> Welcom to  "{{ ansible_hostname }}" </h1>
-
+      <h1 align=center> Welcom to {{hostname.stdout}} </h1>
     <body>
       <div class="container my-5 text-center">
           <button class="btn btn-danger w-100" onclick="loadFiles()"> List files </button>
