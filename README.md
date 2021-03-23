@@ -485,7 +485,7 @@ We had issues with CROS: Cors header Acces Control- Allow-Originâ€™ missing. Itâ
 We have this problem when we thested the end-points of API Rest on Ktor.
 We solve this error by installing CORS in the REST API on Ktor
 
-```java
+```kotlin
 ---
 install(CORS)
     {
@@ -503,7 +503,7 @@ install(CORS)
 
 We fix this error partially when we test the REST API locally but we have to add CORS on server nginx:
 
-```java
+```j2
 ---
 http {
    include	mime.types;
